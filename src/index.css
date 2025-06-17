@@ -1,19 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Michroma&family=Oswald:wght@200..700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 :root {
-  --font-title: 'Rajdhani', sans-serif;
+  --font-title: 'Tomorrow', sans-serif;
   --font-body: 'Inter', sans-serif;
+   --font-secondary: 'Saira Condensed', sans-serif;
   --color-lila: #C084FC;
 }
 
-h1, h2, h3, h4, p, a, button, label {
+
+h1.hero-title, .glow-text {
   font-family: var(--font-title);
+  font-weight: 800;
+  letter-spacing: -0.02em;
   color: var(--color-lila);
-  letter-spacing: -0.01em;
-  line-height: 1.1;
-  text-transform: none; /* o uppercase si querés fuerza */
 }
+
+ h3, h4, h5, .title {
+  font-family: var(--font-title);
+  font-weight: 500 !important;; /* Súper fino */
+  color: var(--color-lila);
+  letter-spacing: -0.005em;
+}
+
+p, a, button, label, small, span, .text-white-50, .fw-light {
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 1.5;
+  color: var(--color-lila);
+  text-transform: none;
+}
+
+/* El resto de tu CSS sigue igual */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* ... resto de estilos de navbar y media queries ... */
+
 
 
 html, body {
